@@ -46,7 +46,7 @@ const Login = () => {
 				window.location.reload();
 			} else {
 				// Handle login
-
+				console.log(`${import.meta.env.VITE_API_BASE}/login`);
 				const res = await axios.post(
 					`${import.meta.env.VITE_API_BASE}/login`,
 					{
