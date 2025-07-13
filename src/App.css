@@ -1,0 +1,15 @@
+@import 'tailwindcss';
+@import url('https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&family=Glass+Antiqua&family=Instrument+Serif:ital@0;1&family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Lexend:wght@100..900&family=Tilt+Neon&family=Xanh+Mono:ital@0;1&display=swap');
+@font-face {
+	font-family: 'font1';
+	src: url('./assets/font1.ttf') format('truetype');
+}
+
+* {
+	font-family: font1;
+}
+/* In your global styles.css */
+.mask-gradient {
+  mask-image: linear-gradient(to bottom, black 0%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to bottom, black 0%, transparent 100%);
+}
