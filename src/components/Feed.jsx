@@ -34,7 +34,6 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import { motion, useAnimation } from 'framer-motion';
-import { FaHeart, FaTimes } from 'react-icons/fa';
 import ShimmerCard from './constant/ShimmerCard';
 const Feed = () => {
 	const [developers, setDevelopers] = useState([]);

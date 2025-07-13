@@ -3,7 +3,6 @@ import React from 'react';
 import { useState, useEffect } from 'react';
 import { useDispatch } from 'react-redux';
 import { addUser } from '../utils/userSlice';
-import UserCard from './userCard';
 const Profilecard = ({ data }) => {
 	console.log(data);
 	const dispatch = useDispatch();

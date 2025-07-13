@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { FaFire, FaHeart, FaComments, FaUserPlus } from 'react-icons/fa';
-import { FiUser } from 'react-icons/fi';
 import { useDispatch, useSelector } from 'react-redux';
 import { motion } from 'framer-motion';
 import { Link, useNavigate } from 'react-router';

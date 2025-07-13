@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
 import { FaLaptopCode, FaRocket, FaHandshake } from 'react-icons/fa';
 import { Link, useNavigate } from 'react-router';

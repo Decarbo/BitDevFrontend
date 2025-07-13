@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import { FaHeart, FaCodeBranch, FaCommentDots, FaUserCircle } from 'react-icons/fa';
+import { FaHeart, FaCodeBranch, FaCommentDots } from 'react-icons/fa';
 import axios from 'axios';
 
 const UserCard = ({ data }) => {
