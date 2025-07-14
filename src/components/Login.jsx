@@ -43,7 +43,6 @@ const Login = () => {
 				dispatch(addUser(res.data.user));
 				console.log('Signup success:', res.data);
 				navigate('/feed');
-				window.location.reload();
 			} else {
 				// Handle login
 				console.log(`${import.meta.env.VITE_API_BASE}/login`);
@@ -61,7 +60,6 @@ const Login = () => {
 
 				console.log('Login success:', res.data);
 				navigate('/feed');
-				window.location.reload();
 			}
 		} catch (error) {
 			setError(error?.response?.data || error?.message);
