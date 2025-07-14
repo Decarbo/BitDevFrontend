@@ -63,12 +63,12 @@ const ConnectionRequests = () => {
 								transition={{ delay: index * 0.1 }}
 								className="bg-[#2C2C2C] p-6 rounded-xl shadow-lg text-center">
 								<img
-									src={user.photoURL}
-									alt={user.firstName}
+									src={user?.photoURL}
+									alt={user?.firstName}
 									className="w-20 h-20 rounded-full object-cover border-2 border-indigo-500 mx-auto mb-4"
 								/>
 								<h3 className="text-xl font-semibold">
-									{user.firstName} {user.lastName}
+									{user?.firstName} {user?.lastName}
 								</h3>
 								<p className="text-gray-400 text-sm mb-4">{user.skills?.length > 0 ? user.skills.join(', ') : 'No skills listed'}</p>
 

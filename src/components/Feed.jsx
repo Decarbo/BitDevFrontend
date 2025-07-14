@@ -33,14 +33,13 @@
 // export default Feed;
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-import { motion, useAnimation } from 'framer-motion';
+import { motion } from 'framer-motion';
 import ShimmerCard from './constant/ShimmerCard';
 const Feed = () => {
 	const [developers, setDevelopers] = useState([]);
 	const [loading, setLoading] = useState(true);
 	const [currentIndex, setCurrentIndex] = useState(0);
 	const [message, setMessage] = useState('');
-	const controls = useAnimation();
 
 	const fetchFeed = async () => {
 		try {
