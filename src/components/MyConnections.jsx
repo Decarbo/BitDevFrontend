@@ -10,7 +10,7 @@ const MyConnections = () => {
 	useEffect(() => {
 		const fetchConnections = async () => {
 			try {
-				const res = await axios.get('/user/connections', {
+				const res = await axios.get(`${import.meta.env.VITE_API_BASE}/user/connections`, {
 					withCredentials: true,
 				});
 				setConnections(res?.data?.data || []);

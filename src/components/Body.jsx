@@ -10,7 +10,7 @@ const Body = () => {
 	const navigate = useNavigate();
 	const userData = useSelector((store) => store.user);
 	const fetchuser = async () => {
-		// if (!userData) return;
+		if (!userData) return;
 		try {
 			const res = await axios.get(`${import.meta.env.VITE_API_BASE}/profile/view`, {
 				withCredentials: true,
